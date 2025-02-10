@@ -1,0 +1,256 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4A90E2; /* Light Blue */
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Main Content */
+.content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4A90E2; /* Light Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker Blue */
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #4A90E2; /* Light Blue */
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+a:hover {
+  color: #357ABD; /* Darker Blue */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Profile Section */
+.profile-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+
+.primary-btn {
+  padding: 10px 20px;
+  background-color: #04d335; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px; 
+}
+
+.green-btn {
+
+  padding: 10px 20px;
+  background-color:#05b214; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+
+}
+
+.primary-btn:hover {
+  background-color: #357ABD; /* Darker Blue */
+}
+
+.secondary-btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.secondary-btn:hover {
+  background-color: #e53935;
+}
+
+/* Buttons (Delete Account) */
+.delete-btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+/* Home Button (Smaller Version) */
+.home-btn {
+  padding: 5px 15px; /* Smaller button */
+  background-color: #4A90E2; /* Light Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px; /* Smaller font */
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #357ABD; /* Darker Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .header {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .primary-btn {
+      width: auto;
+  }
+
+  form {
+      padding: 0 10px;
+  }
+
+  .profile-info {
+      margin-bottom: 15px;
+  }
+
+  .content {
+      padding: 10px;
+  }
+}
